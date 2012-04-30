@@ -1,0 +1,42 @@
+﻿Press EXIT to quit the application, an error has occurred.
+There has been a connectivity error, please try again in a while.
+load
+load
+This game contains advertising materials and might connect to the Internet. Charges are varied according to subscription plans. Visit your operator website for additional information.
+Information
+Waiting screen
+Please Wait...
+User Information
+Send to a friend screen
+I want to share this game with a friend.
+Good bye
+Thank you for your cooperation
+OK
+Exit
+SEND
+Age
+Name
+Phone
+You got free game from a friend! enter link to download:
+I am a boy
+I am a girl
+Accept Coupon Screen 
+Insert phone number to accept coupon
+http://cd1.inner-active.com/Server-1.8X/ClientStart
+To continue playing this game, please go online.
+left-to-right
+3
+Please confirm your choice
+Not connected
+Currently disconnected. Coupon will be sent on next connection.
+Accept Message Screen.
+Insert phone number to accept message
+0
+Did you know . . . ?
+non
+ClientOfflineReport
+ClientGetOffering
+ClientMedia
+ClientUpdateStatus
+GetLanguageStringsFile
+82

@@ -1,0 +1,9 @@
+MIDlet-1: HelloMIDlet, , hello.HelloMIDlet
+MIDlet-Jar-Size: 88542
+MIDlet-Jar-URL: DailyHelperJ2ME.jar
+MIDlet-Name: DailyHelperJ2ME
+MIDlet-Permissions: javax.wireless.messaging.sms.send, javax.microedition.io.Connector.http, javax.microedition.io.Connector.socket, javax.microedition.pim.ContactList.read, javax.microedition.io.Connector.sms
+MIDlet-Vendor: Vendor
+MIDlet-Version: 1.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0
