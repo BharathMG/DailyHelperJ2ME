@@ -45,20 +45,22 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
     private Command backCommand9;
     private Command exitCommand9;
     private Command okCommand5;
-    private Command okCommand6;
-    private Command backCommand10;
     private Command exitCommand10;
-    private Command okCommand7;
-    private Command okCommand8;
-    private Command okCommand9;
-    private Command backCommand11;
+    private Command backCommand10;
+    private Command okCommand6;
     private Command exitCommand11;
-    private Command okCommand10;
+    private Command backCommand11;
+    private Command okCommand7;
+    private Command okCommand9;
+    private Command okCommand8;
+    private Command okCommand11;
     private Command exitCommand12;
     private Command backCommand12;
-    private Command okCommand11;
-    private Command backCommand13;
+    private Command okCommand10;
     private Command exitCommand13;
+    private Command backCommand13;
+    private Command backCommand14;
+    private Command exitCommand14;
     private SplashScreen splashScreen;
     private List list;
     private List list2;
@@ -88,16 +90,18 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
     private TextField textField9;
     private List list5;
     private Form form4;
-    private TextField textField12;
     private TextField textField13;
+    private TextField textField12;
     private TextField textField14;
     private TextField textField15;
     private List list6;
-    private Form form5;
-    private TextField textField16;
-    private TextField textField17;
-    private DateField dateField1;
     private List list7;
+    private Form form5;
+    private TextField textField17;
+    private TextField textField16;
+    private DateField dateField1;
+    private Image image1;
+    private Image image;
 //</editor-fold>//GEN-END:|fields|0|
     private String Towncode;
     private String message;
@@ -395,11 +399,11 @@ if (retCode != 0)
         } else if (displayable == form5) {
             if (command == backCommand12) {//GEN-END:|7-commandAction|35|204-preAction
                 // write pre-action user code here
-//GEN-LINE:|7-commandAction|36|204-postAction
+                switchDisplayable(null, getList());//GEN-LINE:|7-commandAction|36|204-postAction
                 // write post-action user code here
             } else if (command == exitCommand12) {//GEN-LINE:|7-commandAction|37|202-preAction
                 // write pre-action user code here
-//GEN-LINE:|7-commandAction|38|202-postAction
+                exitMIDlet();//GEN-LINE:|7-commandAction|38|202-postAction
                 // write post-action user code here
             } else if (command == okCommand10) {//GEN-LINE:|7-commandAction|39|200-preAction
                 // write pre-action user code here
@@ -464,7 +468,7 @@ if (retCode != 0)
                 // write post-action user code here
             } else if (command == backCommand2) {//GEN-LINE:|7-commandAction|55|67-preAction
                 // write pre-action user code here
-                exitMIDlet();//GEN-LINE:|7-commandAction|56|67-postAction
+                switchDisplayable(null, getList());//GEN-LINE:|7-commandAction|56|67-postAction
                 // write post-action user code here
             }//GEN-BEGIN:|7-commandAction|57|74-preAction
         } else if (displayable == list3) {
@@ -486,87 +490,95 @@ if (retCode != 0)
                 // write pre-action user code here
                 list4Action();//GEN-LINE:|7-commandAction|64|112-postAction
                 // write post-action user code here
-            }//GEN-BEGIN:|7-commandAction|65|152-preAction
+            } else if (command == backCommand14) {//GEN-LINE:|7-commandAction|65|221-preAction
+                // write pre-action user code here
+                switchDisplayable(null, getList());//GEN-LINE:|7-commandAction|66|221-postAction
+                // write post-action user code here
+            } else if (command == exitCommand14) {//GEN-LINE:|7-commandAction|67|223-preAction
+                // write pre-action user code here
+                exitMIDlet();//GEN-LINE:|7-commandAction|68|223-postAction
+                // write post-action user code here
+            }//GEN-BEGIN:|7-commandAction|69|152-preAction
         } else if (displayable == list5) {
-            if (command == List.SELECT_COMMAND) {//GEN-END:|7-commandAction|65|152-preAction
+            if (command == List.SELECT_COMMAND) {//GEN-END:|7-commandAction|69|152-preAction
                 // write pre-action user code here
-                list5Action();//GEN-LINE:|7-commandAction|66|152-postAction
+                list5Action();//GEN-LINE:|7-commandAction|70|152-postAction
                 // write post-action user code here
-            } else if (command == backCommand9) {//GEN-LINE:|7-commandAction|67|156-preAction
+            } else if (command == backCommand9) {//GEN-LINE:|7-commandAction|71|156-preAction
                 // write pre-action user code here
-                switchDisplayable(null, getForm3());//GEN-LINE:|7-commandAction|68|156-postAction
+                switchDisplayable(null, getForm3());//GEN-LINE:|7-commandAction|72|156-postAction
                 // write post-action user code here
-            } else if (command == exitCommand9) {//GEN-LINE:|7-commandAction|69|158-preAction
+            } else if (command == exitCommand9) {//GEN-LINE:|7-commandAction|73|158-preAction
                 // write pre-action user code here
-                exitMIDlet();//GEN-LINE:|7-commandAction|70|158-postAction
+                exitMIDlet();//GEN-LINE:|7-commandAction|74|158-postAction
                 // write post-action user code here
-            }//GEN-BEGIN:|7-commandAction|71|185-preAction
+            }//GEN-BEGIN:|7-commandAction|75|185-preAction
         } else if (displayable == list6) {
-            if (command == List.SELECT_COMMAND) {//GEN-END:|7-commandAction|71|185-preAction
+            if (command == List.SELECT_COMMAND) {//GEN-END:|7-commandAction|75|185-preAction
                 // write pre-action user code here
-                list6Action();//GEN-LINE:|7-commandAction|72|185-postAction
+                list6Action();//GEN-LINE:|7-commandAction|76|185-postAction
                 // write post-action user code here
-            } else if (command == backCommand11) {//GEN-LINE:|7-commandAction|73|189-preAction
+            } else if (command == backCommand11) {//GEN-LINE:|7-commandAction|77|189-preAction
                 // write pre-action user code here
-                switchDisplayable(null, getForm4());//GEN-LINE:|7-commandAction|74|189-postAction
+                switchDisplayable(null, getForm4());//GEN-LINE:|7-commandAction|78|189-postAction
                 // write post-action user code here
-            } else if (command == exitCommand11) {//GEN-LINE:|7-commandAction|75|191-preAction
+            } else if (command == exitCommand11) {//GEN-LINE:|7-commandAction|79|191-preAction
                 // write pre-action user code here
-                exitMIDlet();//GEN-LINE:|7-commandAction|76|191-postAction
+                exitMIDlet();//GEN-LINE:|7-commandAction|80|191-postAction
                 // write post-action user code here
-            }//GEN-BEGIN:|7-commandAction|77|208-preAction
+            }//GEN-BEGIN:|7-commandAction|81|208-preAction
         } else if (displayable == list7) {
-            if (command == List.SELECT_COMMAND) {//GEN-END:|7-commandAction|77|208-preAction
+            if (command == List.SELECT_COMMAND) {//GEN-END:|7-commandAction|81|208-preAction
                 // write pre-action user code here
-                list7Action();//GEN-LINE:|7-commandAction|78|208-postAction
+                list7Action();//GEN-LINE:|7-commandAction|82|208-postAction
                 // write post-action user code here
-            } else if (command == backCommand13) {//GEN-LINE:|7-commandAction|79|212-preAction
+            } else if (command == backCommand13) {//GEN-LINE:|7-commandAction|83|212-preAction
                 // write pre-action user code here
-                switchDisplayable(null, getForm5());//GEN-LINE:|7-commandAction|80|212-postAction
+                switchDisplayable(null, getForm5());//GEN-LINE:|7-commandAction|84|212-postAction
                 // write post-action user code here
-            } else if (command == exitCommand13) {//GEN-LINE:|7-commandAction|81|214-preAction
+            } else if (command == exitCommand13) {//GEN-LINE:|7-commandAction|85|214-preAction
                 // write pre-action user code here
-//GEN-LINE:|7-commandAction|82|214-postAction
+//GEN-LINE:|7-commandAction|86|214-postAction
                 // write post-action user code here
-            }//GEN-BEGIN:|7-commandAction|83|71-preAction
+            }//GEN-BEGIN:|7-commandAction|87|71-preAction
         } else if (displayable == smsComposer) {
-            if (command == SMSComposer.SEND_COMMAND) {//GEN-END:|7-commandAction|83|71-preAction
+            if (command == SMSComposer.SEND_COMMAND) {//GEN-END:|7-commandAction|87|71-preAction
                 // write pre-action user code here
-//GEN-LINE:|7-commandAction|84|71-postAction
+//GEN-LINE:|7-commandAction|88|71-postAction
                 // write post-action user code here
-            } else if (command == backCommand5) {//GEN-LINE:|7-commandAction|85|102-preAction
+            } else if (command == backCommand5) {//GEN-LINE:|7-commandAction|89|102-preAction
                 // write pre-action user code here
-                switchDisplayable(null, getForm());//GEN-LINE:|7-commandAction|86|102-postAction
+                switchDisplayable(null, getForm());//GEN-LINE:|7-commandAction|90|102-postAction
                 // write post-action user code here
-            } else if (command == exitCommand5) {//GEN-LINE:|7-commandAction|87|100-preAction
+            } else if (command == exitCommand5) {//GEN-LINE:|7-commandAction|91|100-preAction
                 // write pre-action user code here
-                exitMIDlet();//GEN-LINE:|7-commandAction|88|100-postAction
+                exitMIDlet();//GEN-LINE:|7-commandAction|92|100-postAction
                 // write post-action user code here
-            }//GEN-BEGIN:|7-commandAction|89|91-preAction
+            }//GEN-BEGIN:|7-commandAction|93|91-preAction
         } else if (displayable == smsComposer1) {
-            if (command == SMSComposer.SEND_COMMAND) {//GEN-END:|7-commandAction|89|91-preAction
+            if (command == SMSComposer.SEND_COMMAND) {//GEN-END:|7-commandAction|93|91-preAction
                 // write pre-action user code here
-//GEN-LINE:|7-commandAction|90|91-postAction
+//GEN-LINE:|7-commandAction|94|91-postAction
                 // write post-action user code here
-            } else if (command == backCommand4) {//GEN-LINE:|7-commandAction|91|94-preAction
+            } else if (command == backCommand4) {//GEN-LINE:|7-commandAction|95|94-preAction
                 // write pre-action user code here
-                switchDisplayable(null, getForm1());//GEN-LINE:|7-commandAction|92|94-postAction
+                switchDisplayable(null, getForm1());//GEN-LINE:|7-commandAction|96|94-postAction
                 // write post-action user code here
-            } else if (command == exitCommand4) {//GEN-LINE:|7-commandAction|93|97-preAction
+            } else if (command == exitCommand4) {//GEN-LINE:|7-commandAction|97|97-preAction
                 // write pre-action user code here
-                exitMIDlet();//GEN-LINE:|7-commandAction|94|97-postAction
+                exitMIDlet();//GEN-LINE:|7-commandAction|98|97-postAction
                 // write post-action user code here
-            }//GEN-BEGIN:|7-commandAction|95|24-preAction
+            }//GEN-BEGIN:|7-commandAction|99|24-preAction
         } else if (displayable == splashScreen) {
-            if (command == SplashScreen.DISMISS_COMMAND) {//GEN-END:|7-commandAction|95|24-preAction
+            if (command == SplashScreen.DISMISS_COMMAND) {//GEN-END:|7-commandAction|99|24-preAction
                 // write pre-action user code here
-                switchDisplayable(null, getList());//GEN-LINE:|7-commandAction|96|24-postAction
+                switchDisplayable(null, getList());//GEN-LINE:|7-commandAction|100|24-postAction
                 // write post-action user code here
-            }//GEN-BEGIN:|7-commandAction|97|7-postCommandAction
-        }//GEN-END:|7-commandAction|97|7-postCommandAction
+            }//GEN-BEGIN:|7-commandAction|101|7-postCommandAction
+        }//GEN-END:|7-commandAction|101|7-postCommandAction
         // write post-action user code here
-    }//GEN-BEGIN:|7-commandAction|98|
-//</editor-fold>//GEN-END:|7-commandAction|98|
+    }//GEN-BEGIN:|7-commandAction|102|
+//</editor-fold>//GEN-END:|7-commandAction|102|
 
 //<editor-fold defaultstate="collapsed" desc=" Generated Getter: exitCommand ">//GEN-BEGIN:|18-getter|0|18-preInit
     /**
@@ -598,8 +610,11 @@ if (retCode != 0)
         if (splashScreen == null) {//GEN-END:|22-getter|0|22-preInit
            
             splashScreen = new SplashScreen(getDisplay());//GEN-BEGIN:|22-getter|1|22-postInit
-            splashScreen.setTitle("splashScreen");
-            splashScreen.setCommandListener(this);//GEN-END:|22-getter|1|22-postInit
+            splashScreen.setTitle("Welcome");
+            splashScreen.setCommandListener(this);
+            splashScreen.setFullScreenMode(true);
+            splashScreen.setImage(getImage());
+            splashScreen.setText("Welcome to Daily Helper !");//GEN-END:|22-getter|1|22-postInit
             // write post-init user code here
         }//GEN-BEGIN:|22-getter|2|
         return splashScreen;
@@ -1252,10 +1267,12 @@ if (retCode != 0)
     public List getList4() {
         if (list4 == null) {//GEN-END:|111-getter|0|111-preInit
             // write pre-init user code here
-            list4 = new List("Choose your Helper", Choice.IMPLICIT);//GEN-BEGIN:|111-getter|1|111-postInit
+            list4 = new List("Health Care", Choice.IMPLICIT);//GEN-BEGIN:|111-getter|1|111-postInit
             list4.append("Jogging Meter", null);
             list4.append("Doctor Appointments", null);
             list4.append("Medics", null);
+            list4.addCommand(getBackCommand14());
+            list4.addCommand(getExitCommand14());
             list4.setCommandListener(this);
             list4.setSelectedFlags(new boolean[]{false, false, false});//GEN-END:|111-getter|1|111-postInit
             // write post-init user code here
@@ -2207,6 +2224,75 @@ if (retCode != 0)
         return exitCommand13;
     }
 //</editor-fold>//GEN-END:|213-getter|2|
+
+//<editor-fold defaultstate="collapsed" desc=" Generated Getter: image1 ">//GEN-BEGIN:|217-getter|0|217-preInit
+    /**
+     * Returns an initialized instance of image1 component.
+     *
+     * @return the initialized component instance
+     */
+    public Image getImage1() {
+        if (image1 == null) {//GEN-END:|217-getter|0|217-preInit
+            // write pre-init user code here
+            image1 = Image.createImage(1, 1);//GEN-LINE:|217-getter|1|217-postInit
+            // write post-init user code here
+        }//GEN-BEGIN:|217-getter|2|
+        return image1;
+    }
+//</editor-fold>//GEN-END:|217-getter|2|
+
+//<editor-fold defaultstate="collapsed" desc=" Generated Getter: image ">//GEN-BEGIN:|218-getter|0|218-preInit
+    /**
+     * Returns an initialized instance of image component.
+     *
+     * @return the initialized component instance
+     */
+    public Image getImage() {
+        if (image == null) {//GEN-END:|218-getter|0|218-preInit
+            // write pre-init user code here
+            try {//GEN-BEGIN:|218-getter|1|218-@java.io.IOException
+                image = Image.createImage("/hello/Sp.jpg");
+            } catch (java.io.IOException e) {//GEN-END:|218-getter|1|218-@java.io.IOException
+                e.printStackTrace();
+            }//GEN-LINE:|218-getter|2|218-postInit
+            // write post-init user code here
+        }//GEN-BEGIN:|218-getter|3|
+        return image;
+    }
+//</editor-fold>//GEN-END:|218-getter|3|
+
+//<editor-fold defaultstate="collapsed" desc=" Generated Getter: backCommand14 ">//GEN-BEGIN:|220-getter|0|220-preInit
+    /**
+     * Returns an initialized instance of backCommand14 component.
+     *
+     * @return the initialized component instance
+     */
+    public Command getBackCommand14() {
+        if (backCommand14 == null) {//GEN-END:|220-getter|0|220-preInit
+            // write pre-init user code here
+            backCommand14 = new Command("Back", Command.BACK, 0);//GEN-LINE:|220-getter|1|220-postInit
+            // write post-init user code here
+        }//GEN-BEGIN:|220-getter|2|
+        return backCommand14;
+    }
+//</editor-fold>//GEN-END:|220-getter|2|
+
+//<editor-fold defaultstate="collapsed" desc=" Generated Getter: exitCommand14 ">//GEN-BEGIN:|222-getter|0|222-preInit
+    /**
+     * Returns an initialized instance of exitCommand14 component.
+     *
+     * @return the initialized component instance
+     */
+    public Command getExitCommand14() {
+        if (exitCommand14 == null) {//GEN-END:|222-getter|0|222-preInit
+            // write pre-init user code here
+            exitCommand14 = new Command("Exit", Command.EXIT, 0);//GEN-LINE:|222-getter|1|222-postInit
+            // write post-init user code here
+        }//GEN-BEGIN:|222-getter|2|
+        return exitCommand14;
+    }
+//</editor-fold>//GEN-END:|222-getter|2|
+
 
     /**
      * Returns a display instance.

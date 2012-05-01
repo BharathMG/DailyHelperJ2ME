@@ -1,5 +1,5 @@
 MIDlet-1: HelloMIDlet, , hello.HelloMIDlet
-MIDlet-Jar-Size: 88542
+MIDlet-Jar-Size: 268855
 MIDlet-Jar-URL: DailyHelperJ2ME.jar
 MIDlet-Name: DailyHelperJ2ME
 MIDlet-Permissions: javax.wireless.messaging.sms.send, javax.microedition.io.Connector.http, javax.microedition.io.Connector.socket, javax.microedition.pim.ContactList.read, javax.microedition.io.Connector.sms
